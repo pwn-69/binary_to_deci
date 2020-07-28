@@ -5,7 +5,7 @@
         <b-nav-item href="#">Converter</b-nav-item>
 
         <b-nav-item-dropdown text="About" right>
-          <b-dropdown-item href="#">Profile</b-dropdown-item>
+          <b-dropdown-item href="#/profile">Profile</b-dropdown-item>
           <b-dropdown-divider></b-dropdown-divider>
           <b-dropdown-item href="#">Resources</b-dropdown-item>
         </b-nav-item-dropdown>

@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import BinaryToDec from '@/components/BinaryToDec.vue'
+import Profile from '@/components/Profile'
 
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 Vue.use(BootstrapVue)
@@ -12,8 +13,14 @@ Vue.use(Router)
 
 export default new Router({
     routes: [{
-        path: '/',
-        name: 'BinaryToDec',
-        component: BinaryToDec
-    }]
+            path: '/',
+            name: 'BinaryToDec',
+            component: BinaryToDec
+        },
+        {
+            path: '/profile',
+            name: 'Profile',
+            component: Profile
+        }
+    ]
 })
