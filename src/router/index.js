@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import BinaryToDec from '@/components/BinaryToDec.vue'
 import Profile from '@/components/Profile'
+import NotFound from '@/components/NotFound'
 
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 Vue.use(BootstrapVue)
@@ -21,6 +22,12 @@ export default new Router({
             path: '/profile',
             name: 'Profile',
             component: Profile
-        }
+        },
+        {
+            path: '*',
+            name: 'NotFound',
+            component: NotFound
+        },
+
     ]
 })
